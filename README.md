@@ -15,7 +15,7 @@ then Copy or  Download Above codes
 ######################################################################################
 # https://www.github.com/sauravsinha239/kali-boot-animation-change/plymouth-prev
 ###########################################################################
-Copy Theme files to :  usr/share/plymouth/theme 
+# Copy Theme files to :  usr/share/plymouth/theme 
 ## check plymouth Available Themes
 # plymouth-set-default-theme --list  
 # plymouth-set-default-theme -R themename 
