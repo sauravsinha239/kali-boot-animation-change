@@ -1,0 +1,20 @@
+#!/bin/bash
+
+check_root () {
+  if [ ! $(id -u) -eq 0 ]; then
+    echo "Please run as root"
+    exit
+  fi
+}
+check_root
+DURATION=$1
+if [ $# -ne 1 ]; 
+then
+  DURATION=5
+fi
+plymouthd; plymouth --show-splash
+for ((i=0; i<$DURATION; i++)); do
+  plymouth --update=duration$i;
+  sleep 1;
+done;
+plymouth --quit
